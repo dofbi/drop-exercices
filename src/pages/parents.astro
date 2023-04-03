@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Drop Exercices - Espace Parents">
+	<main>
+		<h1>Drop <span class="text-gradient">Exercice</span> V 0.0.1</h1>
+		<p class="instructions">
+			<strong>Chers Parents</strong>, accompagner vos <code>enfants</code> avec ces ressources.
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://eleda.education/"
+				title="Eleda"
+				body="Eleda est une solution numérique spécialisée dans l'apprentissage des mathématiques."
+			/>
+			<Card
+				href="https://vittascience.com/ia/"
+				title="Vittascience IA"
+				body="Vittascience IA est une plateforme qui rend accessible l'intelligence artificielle pour les élèves de la maternelle à l'enseignement supérieur."
+			/>
+            <Card
+				href="https://kartoon.nukk.ai/"
+				title="KartOOn"
+				body="KartOOn est un projet pédagogique qui utilise des jeux de cartes pour travailler le vivre ensemble"
+			/>
+            <Card
+				href="https://www.signesdesens.org/ben-le-koala-le-compagnon-de-tous-les-enfants"
+				title="Ben le koala"
+				body="Ben le Koala est un petit personnage animé qui apprend les gestes du quotidien aux enfants de 2 à 6 ans"
+			/>
+            <Card
+				href="http://www.cognitice.education/"
+				title="Dédys 2"
+				body="Augmenter les performances mathématiques mettant en jeu poursuite visuelle et attention"
+			/>
+            <Card
+				href="https://www.storyplayr.com/home"
+				title="Story Play’R"
+				body="tory Play’R est une plateforme qui s’adresse à tous les élèves de la maternelle à l'élémentaire"
+			/>
+            <Card
+				href="https://www.fizziq.org/fizziqjuniormain"
+				title="FizziQ Junior"
+				body="FizziQ Junior est un cahier de sciences numérique pour les élèves du cycle 3"
+			/>
+            <Card
+				href="https://www.cartablefantastique.fr/lecons-exercices-evaluations-2/acces-aux-ressources/#mathematiques-les-fantastiques-exercices"
+				title="Cartable fantastique"
+				body="Une banque d'exercices de mathématiques cycle 3"
+			/>
+            <Card
+				href="https://dv-fabrique.fr/"
+				title="DV FABRIQUE 2"
+				body="une plateforme de création et de partage de contenus pédagogiques tels que des cartes de géographie, des schémas de sciences."
+			/>
+            <Card
+				href="/"
+				title="Retour"
+				body=""
+		    />
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
